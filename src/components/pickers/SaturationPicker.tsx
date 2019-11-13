@@ -42,7 +42,7 @@ export default class SaturationPicker extends Component<Props> {
   render() {
     return (
       <SaturationSlider
-        defaultValue={50}
+        defaultValue={100}
         min={0}
         max={100}
         onChange={(e, value) => {

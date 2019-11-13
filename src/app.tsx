@@ -122,7 +122,9 @@ export default class App extends Component {
             <CardContent>
               <Grid container spacing={3} direction="column">
                 <Grid item>
-                  <Typography variant="overline">Front/Back Cover</Typography>
+                  <Typography variant="overline">
+                    Front/Back Cover - Hue: {this.color1.hue.toFixed()}
+                  </Typography>
                   <HuePicker
                     color={{ h: this.color1.hue, s: 100, l: 100 }}
                     onChange={color => {
@@ -132,7 +134,7 @@ export default class App extends Component {
                   <SaturationPicker
                     hue={this.color1.hue}
                     changeHandler={value => {
-                      this.handleChange1({ saturation: value / 50 });
+                      this.handleChange1({ saturation: value / 100 });
                     }}
                   />
                   <BrightnessPicker
@@ -142,7 +144,9 @@ export default class App extends Component {
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant="overline">Main Body</Typography>
+                  <Typography variant="overline">
+                    Main Body - Hue: {this.color2.hue.toFixed()}
+                  </Typography>
                   <HuePicker
                     color={{ h: this.color2.hue, s: 100, l: 100 }}
                     onChange={color => {
@@ -162,7 +166,9 @@ export default class App extends Component {
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant="overline">USB Cover</Typography>
+                  <Typography variant="overline">
+                    USB Cover - Hue: {this.color3.hue.toFixed()}
+                  </Typography>
                   <HuePicker
                     color={{ h: this.color3.hue, s: 100, l: 100 }}
                     onChange={color => {
