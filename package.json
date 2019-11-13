@@ -12,7 +12,7 @@
     "mobx-react": "^6.1.4",
     "parcel": "^1.12.4",
     "react": "^16.11.0",
-    "react-color": "^2.17.3",
+    "react-color": "^2.16.0",
     "react-dom": "^16.11.0",
     "styled-components": "^4.4.1",
     "typescript": "^3.7.2"
